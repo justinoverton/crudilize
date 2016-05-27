@@ -1,0 +1,30 @@
+{
+    "title": "Written Article",
+    "type": "object",
+    "properties": {
+        "id": {
+            "title": "Article Identifier",
+            "type": "number"
+        },
+        "title": {
+            "title": "Article Title",
+            "type": "string"
+        },
+        "summary": {
+            "title": "Summary",
+            "type": "string"
+        },
+        "authorId": {
+            "type": "integer"
+        },
+        "imgData": {
+            "title": "Article Illustration (small)",
+            "type": "string",
+            "media": {
+                "binaryEncoding": "base64",
+                "type": "image/png"
+            }
+        }
+    },
+    "required" : ["id", "title", "authorId"]
+}
